@@ -1,0 +1,15 @@
+{
+  "name": "ai-code-tutor",
+  "version": "1.0.0",
+  "description": "AI tutor for beginner programmers - explains code line by line, finds and explains errors, gives hints, and generates practice questions. Powered by the Gemini API.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

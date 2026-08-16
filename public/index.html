@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Code Tutor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="page">
+  <div class="eyebrow">DEBUG THIS</div>
+  <h1>Your code, graded like homework.</h1>
+  <p class="subtitle">Paste code below. Get a line-by-line walkthrough, the error spotted and explained, a nudge before the answer, and a practice question to lock it in.</p>
+
+  <div class="lang-pills" id="langPills"></div>
+
+  <div class="code-panel">
+    <div class="code-toolbar">
+      <div class="code-toolbar-left"><span class="icon">&gt;_</span><span id="filename">your_code.py</span></div>
+      <span class="code-toolbar-right" id="lineCount">0 lines</span>
+    </div>
+    <div class="code-body">
+      <div class="line-numbers" id="lineNumbers">1</div>
+      <textarea id="codeInput" class="code-textarea" spellcheck="false" placeholder="Paste your code here..."></textarea>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button class="btn-primary" id="analyzeBtn">Analyze my code <span class="chevron">&rsaquo;</span></button>
+    <button class="btn-ghost" id="exampleBtn">Load a buggy example</button>
+    <span class="error-text" id="topError"></span>
+  </div>
+
+  <div id="results" class="results hidden"></div>
+
+  <p class="footer-note">explanations generated live &mdash; always test your code before submitting it</p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
